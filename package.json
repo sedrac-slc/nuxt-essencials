@@ -10,6 +10,8 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/ui": "^2.18.2",
+    "@nuxtjs/i18n": "^8.3.3",
     "@pinia/nuxt": "^0.5.2",
     "nuxt": "^3.12.4",
     "pinia": "^2.2.0",
@@ -18,5 +20,8 @@
   },
   "overrides": {
     "vue": "latest"
+  },
+  "devDependencies": {
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.1"
   }
 }

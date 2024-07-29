@@ -19,6 +19,7 @@
     
     const videoStore = useVideoStore()
     const { favourites } = storeToRefs(videoStore)
+    const { $toast } = useNuxtApp()
 
     const remove = (v) => {
         videoStore.removeFavourite(v);

@@ -16,4 +16,12 @@ export const useVideoStore = defineStore("videos", () =>{
     }    
 
     return {addFavourite, removeFavourite, favourites}
-})
+},
+{
+    persist: true,
+    /*
+    persist: {
+        storage: persistedState.localStorage
+    }
+    */
+} )

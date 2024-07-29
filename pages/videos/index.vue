@@ -1,7 +1,8 @@
 <template>
+    <h1>{{ $t('welcome') }}</h1>
     <div>Vídeos</div>
-    <NuxtLink to="/videos/favourite">Favoritos</NuxtLink>
-    <div class="videos">
+    <NuxtLink to="/videos/favourite" class="mb-40">Favoritos</NuxtLink>
+    <div class="grid grid-cols-2 justify-center m-auto mt-3 align-center">
         <div v-for="video in videos" ::key="video.id">
             <h2>{{ video.description }}</h2>
             <p v-data-horario>{{ video.created  }}</p>
@@ -28,13 +29,3 @@
     //const aadFovourite = (video: Video) => {//  favourites.value.push(video)}
 
 </script>
-
-<style scoped>
-    .videos{
-        margin-left: 2rem;
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 2rem;
-        width: 100%;
-    }
-</style>

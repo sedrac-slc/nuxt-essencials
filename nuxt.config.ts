@@ -4,8 +4,14 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@pinia/nuxt',
+    '@pinia-plugin-persistedstate/nuxt',
+    "@nuxtjs/i18n",
+    "@nuxt/ui"
   ],
   pinia: {
     storesDirs: ['./stores/**'],
-  },  
+  },
+  i18n: {
+    vueI18n: './i18n' 
+  }
 })
